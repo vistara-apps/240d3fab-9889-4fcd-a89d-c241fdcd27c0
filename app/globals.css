@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* TradeSage Professional Finance Theme */
+  --color-bg: #0a0e1a;
+  --color-fg: #f8fafc;
+  --color-accent: #ffd700;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-primary: #3b82f6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+}
+
+/* CELO Theme */
+[data-theme="celo"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-accent: #fbcc5c;
+  --color-surface: #1a1a1a;
+  --color-border: #333333;
+  --color-primary: #fbcc5c;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+}
+
+/* SOLANA Theme */
+[data-theme="solana"] {
+  --color-bg: #1a0d2e;
+  --color-fg: #ffffff;
+  --color-accent: #9945ff;
+  --color-surface: #2d1b4e;
+  --color-border: #4c2a85;
+  --color-primary: #9945ff;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #c4b5fd;
+}
+
+/* BASE Theme */
+[data-theme="base"] {
+  --color-bg: #0f172a;
+  --color-fg: #f1f5f9;
+  --color-accent: #0052ff;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-primary: #0052ff;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+}
+
+/* COINBASE Theme */
+[data-theme="coinbase"] {
+  --color-bg: #0c1426;
+  --color-fg: #f7fafc;
+  --color-accent: #0052ff;
+  --color-surface: #1a202c;
+  --color-border: #2d3748;
+  --color-primary: #0052ff;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #a0aec0;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface border border-border rounded-lg shadow-card backdrop-blur-sm;
+    background: rgba(30, 41, 59, 0.8);
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-bg px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-fg border border-border px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-accent text-accent px-6 py-3 rounded-lg font-semibold hover:bg-accent hover:text-bg transition-all duration-200;
+  }
+  
+  .btn-destructive {
+    @apply bg-danger text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply bg-surface border border-border rounded-lg px-4 py-3 text-fg placeholder-text-secondary focus:border-accent focus:outline-none transition-colors duration-200;
+  }
+  
+  .metric-card {
+    @apply glass-card p-6 hover:bg-opacity-15 transition-all duration-200;
+  }
+  
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-text-secondary hover:text-accent hover:bg-surface transition-all duration-200;
+  }
+  
+  .nav-item.active {
+    @apply text-accent bg-surface;
+  }
+}
