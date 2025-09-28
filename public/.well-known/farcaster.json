@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "TradeSage",
+    "subtitle": "Built with Zara",
+    "description": "TradeSage is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://240d3fab98894fcda89dc241fdcd27c0-08sb.vercel.app",
+    "splashImageUrl": "https://240d3fab98894fcda89dc241fdcd27c0-08sb.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://240d3fab98894fcda89dc241fdcd27c0-08sb.vercel.app/image.png",
+    "tagline": "TradeSage",
+    "screenshotUrls": [
+      "https://240d3fab98894fcda89dc241fdcd27c0-08sb.vercel.app/screenshot.png",
+      "https://240d3fab98894fcda89dc241fdcd27c0-08sb.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://240d3fab98894fcda89dc241fdcd27c0-08sb.vercel.app/api/webhook"
+  }
+}
